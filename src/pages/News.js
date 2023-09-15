@@ -1,24 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Layout, Menu, Switch, Avatar } from "antd";
-import ListFilm from "../components/Film/ListFilm";
-import "./Home.css";
 import { Link } from "react-router-dom";
-
+import News from "../components/News/News";
+import "./Home.css";
 const { Content, Footer, Sider, Header } = Layout;
 
-const Home = () => {
-  const userPrefersDarkMode = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-  const [darkMode, setDarkMode] = useState(userPrefersDarkMode);
-
-  useEffect(() => {
-    // Save the user's theme preference in local storage
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
+const Contact = () => {
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleThemeChange = () => {
-    setDarkMode(!darkMode); // Toggle darkMode when the Switch is changed
+    setDarkMode(!darkMode);
   };
   const menuItems = [
     {
@@ -50,7 +41,7 @@ const Home = () => {
         <Menu
           theme={darkMode ? "dark" : "light"}
           mode="inline"
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={["3"]}
         >
           {menuItems.map(({ key, label, to }) => (
             <Menu.Item key={key}>
@@ -87,7 +78,6 @@ const Home = () => {
             />
           </div>
         </Header>
-
         <Content>
           <div
             style={{
@@ -96,7 +86,7 @@ const Home = () => {
               color: darkMode ? "#fff" : "inherit",
             }}
           >
-            <ListFilm darkMode={darkMode} />
+            <News />
           </div>
         </Content>
         <Footer
@@ -114,4 +104,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Contact;

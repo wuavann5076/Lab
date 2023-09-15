@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Layout, Menu, Switch, Avatar } from "antd";
-import ListFilm from "../components/Film/ListFilm";
-import "./Home.css";
 import { Link } from "react-router-dom";
-
+import AboutUs from "../components/About Us/AboutUs";
+import "./Home.css";
 const { Content, Footer, Sider, Header } = Layout;
 
-const Home = () => {
-  const userPrefersDarkMode = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-  const [darkMode, setDarkMode] = useState(userPrefersDarkMode);
-
-  useEffect(() => {
-    // Save the user's theme preference in local storage
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
+const Aboutus = () => {
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleThemeChange = () => {
-    setDarkMode(!darkMode); // Toggle darkMode when the Switch is changed
+    setDarkMode(!darkMode);
   };
+
   const menuItems = [
     {
       key: "1",
@@ -43,14 +35,13 @@ const Home = () => {
     },
   ];
 
-  console.log(darkMode);
   return (
     <Layout className="container">
       <Sider theme={darkMode ? "dark" : "light"}>
         <Menu
           theme={darkMode ? "dark" : "light"}
           mode="inline"
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={["4"]}
         >
           {menuItems.map(({ key, label, to }) => (
             <Menu.Item key={key}>
@@ -96,13 +87,13 @@ const Home = () => {
               color: darkMode ? "#fff" : "inherit",
             }}
           >
-            <ListFilm darkMode={darkMode} />
+            <AboutUs />
           </div>
         </Content>
         <Footer
           style={{
             textAlign: "center",
-            background: darkMode ? "#333" : "white",
+            background: darkMode ? "#001529" : "white", // Set the background color based on darkMode
           }}
         >
           <p style={{ color: darkMode ? "white" : "#333" }}>
@@ -114,4 +105,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Aboutus;

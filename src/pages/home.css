@@ -1,3 +1,10 @@
 .ant-layout-sider-children {
-    background: white;
+    /* background: white; */
+}
+
+.demo-logo-vertical {}
+
+.container {
+    height: 100vh;
+    width: 100vw;
 }

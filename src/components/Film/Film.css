@@ -1,9 +1,10 @@
 .film-list-container {
     text-align: center;
     /* margin: 2rem; */
-    height: 700px;
+    height: 720px;
     overflow: auto;
     overflow-x: hidden;
+    border-radius: 5px;
 }
 
 .heading {
@@ -56,10 +57,19 @@
 
 .modal-image {
     max-width: 100%;
-    height: auto;
+    height: 444px;
     margin-bottom: 1rem;
 }
 
 .modal-info {
     margin: 0.5rem 0;
+}
+
+.list-image {
+    height: 444px;
+    padding: 5px;
+}
+
+.btn {
+    margin-top: 10px
 }

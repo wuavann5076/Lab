@@ -1,0 +1,61 @@
+/* DetailOfFilm.css */
+
+.film-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 85vh;
+    overflow: auto;
+}
+
+.film-info-part {
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+}
+
+.film-images {
+    flex: 1;
+    max-width: 300px;
+}
+
+.film-poster {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.film-details {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.film-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.film-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.film-video-part {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+}
+
+/* Style the video iframe (FilmClip) */
+.film-clip iframe {
+    width: 100%;
+    height: 400px;
+    /* Adjust the video height as needed */
+    border: none;
+}

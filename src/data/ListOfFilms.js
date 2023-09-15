@@ -6,6 +6,9 @@ const films = [
     Title: "Iron Man",
     Year: "2008",
     Nation: "USA",
+    Description:
+      "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight against evil.",
+    VideoUrl: "https://www.youtube.com/embed/8ugaeA-nMTc?si=DQ4xERgmpncqTWc0",
   },
   {
     id: 2,
@@ -14,6 +17,9 @@ const films = [
     Title: "The Avengers",
     Year: "2012",
     Nation: "USA",
+    Description:
+      "Earth's mightiest heroes, including Iron Man, Captain America, Thor, and the Hulk, must come together to save the world from Loki and his alien army.",
+    VideoUrl: "https://www.youtube.com/embed/eOrNdBpGMv8?si=8jsKdmAwLWL3Ehl_",
   },
   {
     id: 3,
@@ -22,6 +28,9 @@ const films = [
     Title: "Guardians of the Galaxy",
     Year: "2014",
     Nation: "USA",
+    Description:
+      "A group of intergalactic misfits, including Star-Lord, Gamora, Drax, Rocket, and Groot, must stop a powerful villain from destroying the universe.",
+    VideoUrl: "https://www.youtube.com/embed/d96cjJhvlMA?si=MABq9pHhg6gNwGqS",
   },
   {
     id: 4,
@@ -30,6 +39,9 @@ const films = [
     Title: "Black Panther",
     Year: "2018",
     Nation: "USA",
+    Description:
+      "T'Challa, the newly crowned king of Wakanda and the Black Panther, faces challenges to his throne and must protect his nation's secrets.",
+    VideoUrl: "https://www.youtube.com/embed/xjDjIWPwcPU?si=duWXXeUXJiEoPNfG",
   },
   {
     id: 5,
@@ -38,6 +50,9 @@ const films = [
     Title: "Avengers: Infinity War",
     Year: "2018",
     Nation: "USA",
+    Description:
+      "The Avengers and their allies must work together to stop the powerful Thanos from collecting all six Infinity Stones and wiping out half of all life in the universe.",
+    VideoUrl: "https://www.youtube.com/embed/6ZfuNTqbHE8?si=SHDhfMSWUJU9nxSU",
   },
   {
     id: 6,
@@ -46,6 +61,9 @@ const films = [
     Title: "Spider-Man: Into the Spider-Verse",
     Year: "2018",
     Nation: "USA",
+    Description:
+      "Teenager Miles Morales becomes Spider-Man of his reality, crossing paths with other Spider-People from different dimensions to stop a threat to all realities.",
+    VideoUrl: "https://www.youtube.com/embed/g4Hbz2jLxvQ?si=NK5ffzLoOtmhcBMk",
   },
   {
     id: 7,
@@ -54,6 +72,9 @@ const films = [
     Title: "Avengers: Endgame",
     Year: "2019",
     Nation: "USA",
+    Description:
+      "The Avengers embark on a final mission to undo Thanos' actions and restore balance to the universe in the epic conclusion to the Infinity Saga.",
+    VideoUrl: "https://www.youtube.com/embed/TcMBFSGVi1c?si=Azv-AsAIljrDPM0W",
   },
   {
     id: 8,
@@ -62,6 +83,9 @@ const films = [
     Title: "Black Widow",
     Year: "2021",
     Nation: "USA",
+    Description:
+      "Natasha Romanoff confronts her past and the dark conspiracy tied to her former life as a Russian spy in this action-packed Marvel film.",
+    VideoUrl: "https://www.youtube.com/embed/ybji16u608U?si=HpEFi4azGB3hOo96",
   },
   {
     id: 9,
@@ -70,6 +94,9 @@ const films = [
     Title: "Shang-Chi and the Legend of the Ten Rings",
     Year: "2021",
     Nation: "USA",
+    Description:
+      "Shang-Chi, a skilled martial artist, must confront the past he thought he left behind when he is drawn into the covert Ten Rings organization's dangerous activities.",
+    VideoUrl: "https://www.youtube.com/embed/8YjFbMbfXaQ?si=J2UTWt82eNMLdwWg",
   },
 ];
 

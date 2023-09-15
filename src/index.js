@@ -4,13 +4,25 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { ConfigProvider } from "antd";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ConfigProvider
+    // theme={{
+    //   token: {
+    //     colorPrimary: "#2123bf",
+    //     colorBgLayout: "#313131",
+    //     colorBgContainer: "#1a1a1a",
+    //     colorText: "white",
+    //   },
+    // }}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ConfigProvider>
   </React.StrictMode>
 );
 
